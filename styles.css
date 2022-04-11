@@ -1,1 +1,66 @@
-/* Пиши стили тут */
+.wrapper {
+    display: inline-block;
+}
+
+.wrapper .star1 {
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.wrapper .star1 .star2 {
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50px;
+    }
+
+.wrapper .star1 .star2 .star3 {
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50px;
+}
+
+.wrapper .star1 .star2 .star3 .star4 {
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50px;
+}
+
+.wrapper .star1 .star2 .star3 .star4 .star5 {
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 50px;
+}
+
+.wrapper .star1 .star2 .star3 .star4 .star5:hover {
+    background-image: url("img/star.png");
+}
+
+.wrapper .star1 .star2 .star3 .star4:hover {
+    background-image: url("img/star.png");
+}
+
+.wrapper .star1 .star2 .star3:hover {
+    background-image: url("img/star.png");
+}
+
+.wrapper .star1 .star2:hover {
+    background-image: url("img/star.png");
+}
+
+.wrapper .star1:hover {
+    background-image: url("img/star.png");
+}
