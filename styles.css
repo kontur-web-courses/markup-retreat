@@ -1,20 +1,49 @@
 /* Пиши стили тут */
 
-.rating {
+.raiting {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 .star {
-    background-image: url("img/star-empty.svg") ;
     background-size: cover;
+    font-size: 150px;
     width: 100px;
     height: 100px;
     display: inline-block;
 }
 
-.star:hover,
-.star:hover ~ .star {
-    background-image: url("img/star.svg") ;
-    background-size: cover;
+input {
+    display: none;
+}
+
+input {
+    display: inline!important;
+}
+
+input {
+    display: none!important;
+}
+
+/*.test:before {*/
+/*    font-size: 150px;*/
+/*    content: "\2605";*/
+/*    display: none;*/
+/*}*/
+label.star:before {
+
+    content: "\2606";
+}
+.star-input:hover,
+.star-input:hover ~ label,
+.star:hover:before,
+.star:hover ~ label:before{
+    content: "\2605";
+    color: yellow;
+}
+.star:checked,
+.star-input:checked ~ label:before,
+.star-input:checked + label:before{
+    content: "\2605";
+    color: yellow;
 }
