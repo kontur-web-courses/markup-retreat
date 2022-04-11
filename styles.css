@@ -1,19 +1,21 @@
-/* Пиши стили тут */
-span {
-    font-size: 228px;
+.star {
+    background-image: url("img/star-empty.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
 }
 
-.rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
-.rating > span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
+
+.star:hover {
+    background-image: url("img/star.png");
 }
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute;
+
+.star:hover ~ .star {
+    background-image: url("img/star.png");
 }
