@@ -2,42 +2,47 @@
 .rating{
     display: inline-block;
 }
+
 .rating .star{
     display: inline-block;
+}
+
+.rating .star:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star-empty.png");
+    content: "👿";
+    font-size: 16px;
     background-size: cover;
     left: 50px;
     position: relative;
 }
 
-.rating .star1:hover{
+.rating .star1:hover:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star.png");
+    content: "😈";
 }
 
-.rating .star2:hover{
+.rating .star2:hover:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star.png");
+    content: "😈";
 }
 
-.rating .star3:hover{
+.rating .star3:hover:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star.png");
+    content: "😈";
 }
 
-.rating .star4:hover{
+.rating .star4:hover:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star.png");
+    content: "😈";
 }
 
-.rating .star5:hover{
+.rating .star5:hover:before{
     height: 50px;
     width: 50px;
-    background-image: url("img/star.png");
+    content: "😈";
 }
