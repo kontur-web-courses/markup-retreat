@@ -14,7 +14,6 @@ for (let i = 0; i< 5; i++){
     arr[i].addEventListener('mouseleave', e => {
         star1.src = 'img/star-empty.png';
     })
-
     arr[i].addEventListener('mousedown', e => {
         star1.src = 'img/star.png';
         for (let i = 0; i<5; i++){
