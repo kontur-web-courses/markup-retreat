@@ -1,1 +1,34 @@
 /* Пиши стили тут */
+.star {
+    background-image: url("img/star-empty.png");
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-size: cover;
+}
+
+.star-in:checked ~ .star {
+    background-image: url("img/star.png");
+}
+
+.star-in {
+    visibility: hidden;
+}
+
+.star.star {
+    visibility: visible;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star:hover .star {
+    background-image: url("img/star-empty.png");
+}
+
+.star:hover ~ .star, .star:hover {
+    background-image: url("img/star.png");
+}
