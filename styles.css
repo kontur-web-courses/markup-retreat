@@ -1,10 +1,28 @@
-/* Пиши стили тут */
 .star {
+    visibility: hidden;
     background-image: url("img/star-empty.png");
-    background-size: contain;
     width: 100px;
     height: 100px;
-    margin-right: 10px;
+    display: block;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.star-in:checked ~ .star {
+    background-image: url("img/star.png");
+}
+
+.star input {
+    visibility: hidden;
+}
+
+.star-in {
+    visibility: hidden;
+}
+
+.star.star {
+    visibility: visible;
+    pointer-events: initial;
 }
 
 .stars {
@@ -13,10 +31,10 @@
     justify-content: flex-end;
 }
 
-.star:hover {
-    background-image: url("img/star.png");
+.star:hover .star{
+    background-image: url("img/star-empty.png");
 }
 
-.star:hover ~ .star {
+.star:hover ~ .star, .star:hover {
     background-image: url("img/star.png");
 }
