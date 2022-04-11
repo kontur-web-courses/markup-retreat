@@ -1,1 +1,7 @@
-/* Пиши стили тут */
+div:hover{
+    color: orange;
+}
+
+span:hover ~ span{
+    color: black;
+}
