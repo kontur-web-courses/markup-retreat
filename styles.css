@@ -1,1 +1,20 @@
 /* Пиши стили тут */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.star {
+    background-image: url("img/star-empty.svg") ;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    background-image: url("img/star.svg") ;
+    background-size: cover;
+}
