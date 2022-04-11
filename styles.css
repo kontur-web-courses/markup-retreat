@@ -1,13 +1,4 @@
-div {
-    float: right;
-    color: lightgrey;
-}
-
-div:before {
-    content: '★';
-    font-size: 200px;
-}
-
-div:hover, div:hover ~ div {
-    color: gold;
+img {
+    width: 100px;
+    height: 100px;
 }
