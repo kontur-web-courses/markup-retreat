@@ -3,32 +3,18 @@
     background-image: url("img/star-empty.png");
     width: 200px;
     height: 200px;
-    display: flex;
+    display: inline-block;
     background-size: cover;
 }
 
-.star-in:checked ~ .star {
-    background-image: url("img/star.png");
-}
-
-.star-in {
-    visibility: hidden;
-}
-
-.star.star {
-    visibility: visible;
-}
-
 .stars {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    display: inline-block;
 }
 
-.star:hover .star {
-    background-image: url("img/star-empty.png");
-}
-
-.star:hover ~ .star, .star:hover {
+.stars:hover .star {
     background-image: url("img/star.png");
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star-empty.png");
 }
