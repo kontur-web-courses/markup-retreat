@@ -1,1 +1,69 @@
-/* Пиши стили тут */
+.star1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.star2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.star3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.star4 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 100px;
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.star5 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;
+    background-image: url("img/star-empty.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.star1:hover {
+    background-image: url("img/star.png");
+}
+
+.star2:hover {
+    background-image: url("img/star.png");
+}
+
+.star3:hover {
+    background-image: url("img/star.png");
+}
+
+.star4:hover {
+    background-image: url("img/star.png");
+}
+
+.star5:hover {
+    background-image: url("img/star.png");
+}
