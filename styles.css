@@ -1,1 +1,16 @@
-/* Пиши стили тут */
+
+.star-image {
+    background: url("img/star-empty.png") no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+
+.star {
+    display: none;
+}
+
+input:checked + label > div {
+    background-image: url("img/star.png");
+}
