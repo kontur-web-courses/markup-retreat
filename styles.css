@@ -1,1 +1,29 @@
 /* Пиши стили тут */
+.stars {
+    text-align: center;
+}
+.stars .rating-group {
+    display: inline-flex;
+}
+.stars input {
+    position: absolute;
+    left: -9999px;
+}
+.stars label {
+    margin: 0;
+    cursor: pointer;
+}
+.stars label img {
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    fill: #000000;
+    transition: fill 0.3s;
+}
+
+.stars:hover label img {
+    background-image: url("/img/star.svg");
+}
+.stars input:hover ~ label img {
+    background-image: url("/img/star-empty.svg");
+}
