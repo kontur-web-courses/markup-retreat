@@ -8,9 +8,15 @@
   position: relative;
 }
 
+.column .img-back {
+  position: absolute;
+  z-index: 1;
+}
+
 .column .img-top {
   display: none;
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
 }
