@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Верстай звёздный рейтинг тут -->
+    <script>
+      function updateUpTo(pos){
+        console.log(`click${pos}`)
+        let fullImg = "http://localhost:63343/markup-retreat/img/star.png";
+        let emptyImg = "http://localhost:63343/markup-retreat/img/star-empty.png";
+        if (document.getElementById(starName(pos)).src === fullImg
+            && (pos === 4 ||  document.getElementById(starName(pos + 1)).src === emptyImg)){
+          fullImg = emptyImg;
+        }
+        for (let i = 0; i <= pos; i++) {
+            document.getElementById(starName(i)).src = fullImg;
+        }
+        for (let i = pos + 1; i < 5; i++) {
+            document.getElementById(starName(i)).src = emptyImg;
+        }
+      }
+
+      function starName(pos){
+        return `star${pos}`;
+      }
+    </script>
+    <div class="rating">
+      <span><img src="./img/star-empty.png" id="star0" class="star" alt="star1" onclick="updateUpTo(0)"></span>
+      <span><img src="./img/star-empty.png" id="star1" class="star" alt="star1" onclick="updateUpTo(1)"></span>
+      <span><img src="./img/star-empty.png" id="star2" class="star" alt="star1" onclick="updateUpTo(2)"></span>
+      <span><img src="./img/star-empty.png" id="star3" class="star" alt="star1" onclick="updateUpTo(3)"></span>
+      <span><img src="./img/star-empty.png" id="star4" class="star" alt="star1" onclick="updateUpTo(4)"></span>
+    </div>
   </body>
 </html>
