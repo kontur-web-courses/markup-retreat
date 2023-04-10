@@ -17,22 +17,22 @@
     text-shadow: 1px 1px #bbb;
 }
 .rating-area:not(:checked) > label:before {
-    content: '★';
+    content: url(img/star-empty.svg);
 }
 .rating-area > input:checked ~ label {
-    color: gold;
+    content: url(img/star.svg);
     text-shadow: 1px 1px #c60;
 }
 .rating-area:not(:checked) > label:hover,
 .rating-area:not(:checked) > label:hover ~ label {
-    color: gold;
+    content: url(img/star.svg);
 }
 .rating-area > input:checked + label:hover,
 .rating-area > input:checked + label:hover ~ label,
 .rating-area > input:checked ~ label:hover,
 .rating-area > input:checked ~ label:hover ~ label,
 .rating-area > label:hover ~ input:checked ~ label {
-    color: gold;
+    content: url(img/star.svg);
     text-shadow: 1px 1px goldenrod;
 }
 .rate-area > label:active {
