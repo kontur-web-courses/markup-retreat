@@ -1,1 +1,10 @@
-/* Пиши стили тут */
+.rating {
+    width: 100%;
+}
+
+.rating_star {
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    color: #dabd18b2;
+}
