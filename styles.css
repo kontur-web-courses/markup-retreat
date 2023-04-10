@@ -1,1 +1,63 @@
-/* Пиши стили тут */
+.stars {
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
+
+.star {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.star img {
+  display: block;
+  object-fit: contain;
+  width: 50px;
+  height: 50px;
+}
+
+.star:hover::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url("img/star.png") no-repeat 0 0;
+  background-size: 100%;
+  z-index: 1;
+}
+
+.star:hover::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url("img/star-empty.png") no-repeat 0 0;
+  background-size: 100%;
+  z-index: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#star1:hover ~ #star1::before,
+#star2:hover ~ #star1::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: url("img/star.png") no-repeat 0 0;
+  background-size: 100%;
+  z-index: 1;
+}
