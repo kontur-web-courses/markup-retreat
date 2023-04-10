@@ -1,11 +1,8 @@
 let rating = document.getElementsByClassName("rating_star")
 
 
-rating[0].addEventListener('mouseover', )
-
-
 for (let i = 0; i< 5; i++){
-    rating[i].addEventListener('mouseover', e => 
+    rating[i].addEventListener('mouseover', e =>
     {
         console.log(1)
         rating[i].color = '#000000B2';

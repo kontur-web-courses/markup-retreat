@@ -6,5 +6,8 @@
     text-align: center;
     font-size: 50px;
     cursor: pointer;
-    color: #dabd18b2;
+}
+
+.checked {
+    color: aqua;
 }
