@@ -1,1 +1,21 @@
-/* Пиши стили тут */
+.star {
+    background-image: url("img/star-empty.png");
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star:hover {
+    background-image: url("img/star.png");
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star.png");
+}
