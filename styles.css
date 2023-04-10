@@ -1,1 +1,27 @@
 /* Пиши стили тут */
+
+.star {
+    background: url(img/star-empty.svg) no-repeat;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.star :hover {
+    background: url(img/star.svg) no-repeat;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars:hover .star {
+    background-image: url("img/star.svg");
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star-empty.svg");
+}
