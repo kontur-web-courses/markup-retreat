@@ -1,1 +1,20 @@
 /* Пиши стили тут */
+.star {
+    background-image: url("img/star-empty.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars:hover .star {
+    background-image: url("img/star.png");
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star-empty.png");
+}
