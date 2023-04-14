@@ -1,1 +1,29 @@
-/* Пиши стили тут */
+form input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+form {
+    text-align: left;
+    direction: rtl;
+}
+
+form > label > img {
+    width: 100px;
+    background-repeat: round;
+}
+
+form > label:hover > img,
+form > label:hover ~ label > img {
+    cursor: pointer;
+    background-image: url('img/star.png');
+}
+
+form > label > input:checked + img,
+form > label:has( > input:checked) ~ label > img
+{
+    background-image: url('img/star.png');
+}
+
